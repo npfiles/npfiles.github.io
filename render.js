@@ -1,4 +1,5 @@
-var data = "url=" + location.href;
+var uri_enc = encodeURI(location.href);
+var data = "url=" + uri_enc;
 $.ajax({
   type: "POST",
   url: "http://netpartner.sakura.ne.jp/comp/medium.php",
